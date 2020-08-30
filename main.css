@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/* Basic */
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font: inherit;
+}
+
+body, input, select, textarea {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222726;;
+    font-size: 15pt;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    line-height: 1.65em;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+  
+/* General */
+.dashline {
+    flex-basis: 100%;
+    border: 1px dashed #FFFFFF;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 600px;
+    height: 0px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F2F2F2;
+    text-align: left;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2F2F2;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2F2F2;
+}
+
+section p{
+    color: #F2F2F2;
+}
+
+/* Nav */
+nav {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+/* Banner */
+
+#banner {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: url(img/bg_banner.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+.banner_logo {
+    text-align: center;
+    min-width: 88px;
+    max-width: 180px;
+    min-height: 88px;
+    max-height: 180px;
+}
+
+.banner_typo {
+    text-align: center;
+    min-width: 240px;
+    max-width: 480px;
+    min-height: 140px;
+    max-height: 280px;
+}
+
+.banner1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+.banner2{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #F9B82A;
+}
+
+    /* intro */
+.introvid{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    padding: 32px 24px 24px 32px;
+    background: #FF565E;
+    box-shadow: 0px 1px 14px #19282F;
+    border-radius: 25px;
+}
+
+.vid_container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%; 
+    height: 0;
+    margin-top: 25px;
+}
+
+.vid_container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    }
+
+    /* courses */
+
+.conwrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.cardbox{
+    margin-top:25px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_tut{
+    background-color: #4A4A49;
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    height: 420px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+.card_tut iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.card_tut h3{
+    font-family: Roboto condensed;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.card_tut span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #96A7AF;
+}
+
+.card_tut p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.btn_more{
+    /*shape*/
+    padding: 12px;
+    text-align: center;
+    min-width: 30%;
+    height: 50px;
+    border: 4px solid #F7E35D;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: #222726;
+
+    /*text*/
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%px;
+    color: #F7E45D;
+}
+
+.conwrapper_s{
+    background: #4A4A49;
+    border-radius: 40px 0px 40px 0px;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card_s_white{
+    margin: 12px;
+    padding: 25px;
+
+    min-width: 300px;
+    width: 300px;
+    height: 100px;
+    border-radius: 25px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    display: inline-block;
+    position: relative;
+
+    background-color: #F2F2F2;
+}
+
+.card_s_white img{
+    height: 80px;
+    float:left;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.s_txt_con {
+    float:left;
+    align-content: center;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+.s_txt_con h3{
+    color: #1A3B34;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.s_click {
+    color: #1A3B34;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* folio */
+
+.cardwrapper_pf{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px;
+}
+
+.card_pf{
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 12px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    height: 300px;
+    min-width: 300px;
+
+    overflow: hidden;
+    background: url(img/bg_banner.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.card_pf h3{
+    margin-top: 275px;
+}
+
+/* clients */
+
+.card_c{
+    margin: 12px;
+    padding: 25px;
+
+    width: 150px;
+    height: 75px;
+    border-radius: 25px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    display: inline-block;
+    position: relative;
+
+    background-color: #F2F2F2;
+}
+
+.card_c img{
+    height: 50px;
+    float:left;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.client_name{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    color: #222726;
+
+    align-content: center;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+/* contact */
+
+.form_con{
+    padding: 25px;
+}
+
+.form_con{
+    padding: 25px;
+    display: inline-block;
+}
+
+.form_con input {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #96A7AF;
+    display: block;
+}
+
+.btn_send{
+    /*shape*/
+    padding: 12px;
+    text-align: center;
+    min-width: 30%;
+    height: 50px;
+    background: #FFC542;
+    border-radius: 12px;
+
+    /*text*/
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+
+    display: inline-block;
+}
+
+/* X */

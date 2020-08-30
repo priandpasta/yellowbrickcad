@@ -1,228 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="Platform compelling architectural visualizations">
+    <meta name="keywords" content="yellowbrickcad, yellow brick cad, yellow brick, yellow cad, heeger, archviz, architecture, 3d render, drafting, australia, melbourne">
+    <meta name="author" content="Priscilla Heeger">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
     <title>Yellow Brick CAD</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>SERVICES</li>
-                <li>PORTFOLIO</li>
-                <li>COURSES</li>
-                <li>DOWNLOADS</li>
-                <li>CONTACT US</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="downloads.html">DOWNLOADS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- main -->
-       <!-- add bg -->
-    <img src="logo_main" alt="Main Logo">
-    <img src="logo_typowhite" alt="Brand Name">
-    <span>DESIGN PLATAFORM FOR</span>
-    <h1>DRAFTING AND ARCHITECTURAL VISUALIZATIONS</h1>
-    <!-- main end -->
+    <!-- banner -->
+    <section id="banner">
+        <img class="banner_logo" src="/img/logo_main.png" alt="Main Logo">
+        <img class="banner_typo" src="/img/logo_typo_white.png" alt="Brand Name">
+        <span class="banner1">DESIGN PLATAFORM FOR</span>
+        <h1 class="banner2">DRAFTING AND ARCHITECTURAL VISUALIZATIONS</h1>
+    </section>
+    <!-- banner end -->
 
     <div class="dashline"></div>
 
     <!-- intro vid start -->
-    <div class="introvid">
-        <h2>INTRO</h2>
-        <p>YellowBrick is an ecosystem of practical resources for who wants to build high-quality.</p>
-       <!-- add vid yt -->
-    </div>
+    <section id="intro">
+        <div class="introvid">
+            <h2>INTRO</h2>
+            <p>YellowBrick is an ecosystem of practical resources for who wants to build high-quality.</p>
+            <div class="vid_container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9u2o3PToUww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
     <!-- intro vid end -->
 
     <div class="dashline"></div>
 
     <!-- folio start -->
-    <h2>PORTFOLIO</h2>
-    <p>Our latest projects.</p>
-    <div class="gallery_index">
+    <section id="portfolio">
+        <h2>PORTFOLIO</h2>
+        <p>Our latest projects.</p>
+        <div class="cardwrapper_pf">
 
-    </div>
+            <div class="card_pf">
+                <h3>Project 1</h3>
+            </div>
+            <div class="card_pf">
+                <h3>Project 2</h3>
+            </div>
+            <div class="card_pf">
+                <h3>Project 3</h3>
+            </div>
+
+        </div>   
+    </section>
     <!-- folio vid end -->
 
     <div class="dashline"></div>
 
     <!-- courses start -->
-    <h2>COURSES</h2>
-    <p>Our latest tutorials.</p>
+    <section id="courses">
+        <h2>COURSES</h2>
+        <p>Our latest tutorials.</p>
+        <div class="conwrapper">
+            <div class="cardbox">
+                <div class="card_tut"> <!-- card1 -->
+                    <div class="vid_container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgNrIRcz9K4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Lumion | How to Create a Panorama and share it as street view</h3>
+                    <span>23 Jul 2020</span>    <!-- date/time stamp -->
+                    <p>How to make a panorama picture in Lumion 8 is simple. I will teach you how to configure the settings and how to share so your clients can view the same as google street view </p>
+                </div>
 
-    <div class="card_csindex"> <!-- card1 -->
-        <img src="/" alt="/">
-        <h3>Tutorial Name</h3>
-        <p>Date and Time</p>    <!-- date/time stamp -->
-        <p>We’re interested in your ideas and would be glad to build something bigger out of it. </p><!-- what it is about -->
-        <button class="card_start">START</button>
-    </div>
+                <div class="card_tut"> <!-- card2 -->
+                    <div class="vid_container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdECDMP-P-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Revit | Delete Almost Everything</h3>
+                    <span>20 Jun 2020</span>    <!-- date/time stamp -->
+                    <p>How to delete almost all element types in Revit using Dynamo.</p>
+                </div>
 
-    <div class="card_csindex"> <!-- card2 -->
-        <img src="/" alt="/">
-        <h3>Tutorial Name</h3>
-        <p>Date and Time</p>    <!-- date/time stamp -->
-        <p>We’re interested in your ideas and would be glad to build something bigger out of it. </p><!-- what it is about -->
-        <button class="card_start">START ></button>
-    </div>
-
-    <button class="more">MORE ></button>
+                <div class="card_tut"> <!-- card3 -->
+                    <div class="vid_container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bbAeDUzGU-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Revit | How to create multiple sheets from an excel list</h3>
+                    <span>12 Jun 2020</span>    <!-- date/time stamp -->
+                    <p>Save your time by learning how to create multiple sheets from an excel list with Revit + Dynamo. Don't be scared of using Dynamo, its easier than you think it is :)</p>
+                </div>
+            </div>
+            <div class="cardbox">
+                <button class="btn_more">MORE ></button>
+            </div>
+        </div>
+    </section>
     <!-- courses end -->    
 
     <div class="dashline"></div>
 
     <!-- services start -->
-    <div class="serv_div">
-        <h2>SERVICES</h2>
-        <p>Our main skills.</p>
+    <section id="services">
+            <div class="conwrapper_s">
+            <h2>SERVICES</h2>
+            <p>Our main skills.</p>
+            <div class="cardbox">
 
-        <div class="ser_white">
-            <div>
-                <img src="/" alt="icon">
-            </div>
-            <div>
-                <h4>DRAFTING</h4>
-                <button class="serv_btn_more">Click for more ></button>
-            </div>
-        </div>
+                <div class="card_s_white"> <!-- card1 -->
+                    <img src="/img/logo_main.png" >
+                    <div class="s_txt_con">
+                        <h3>SKILLS</h3>
+                        <p class="s_click">Click for more ></p>
+                    </div>
+                </div>
+                
+                <div class="card_s_white"> <!-- card2 -->
+                    <img src="/img/logo_main.png" >
+                    <div class="s_txt_con">
+                        <h3>SKILLS</h3>
+                        <p class="s_click">Click for more ></p>
+                    </div>
+                </div>
 
-        <div class="ser_red">
-            <div>
-                <img src="/" alt="icon">
             </div>
-            <div>
-                <h4>DRAFTING</h4>
-                <button class="serv_btn_more">Click for more ></button>
-            </div>
-        </div>
-
-        <div class="ser_yellow">
-            <div>
-                <img src="/" alt="icon">
-            </div>
-            <div>
-                <h4>DRAFTING</h4>
-                <button class="serv_btn_more">Click for more ></button>
-            </div>
-        </div>
-
-        <div class="ser_green">
-            <div>
-                <img src="/" alt="icon">
-            </div>
-            <div>
-                <h4>DRAFTING</h4>
-                <button class="serv_btn_more">Click for more ></button>
-            </div>
-        </div>
-
-        <div class="ser_blue1">
-            <div>
-                <img src="/" alt="icon">
-            </div>
-            <div>
-                <h4>DRAFTING</h4>
-                <button class="serv_btn_more">Click for more ></button>
-            </div>
-        </div>
-
-        <div class="ser_blue2">
-            <div>
-                <img src="/" alt="icon">
-            </div>
-            <div>
-                <h4>DRAFTING</h4>
-                <button class="serv_btn_more">Click for more ></button>
-            </div>
-        </div>
-
-    </div>
+    </section>
     <!-- services end -->
 
     <div class="dashline"></div>
 
     <!-- clients start -->
-    <h2>TRUSTED BY</h2>
-    <p>Some of out clients.</p>
+        <section>
+        <h2>TRUSTED BY</h2>
+        <p>Some of out clients.</p>
 
-    <div class="grid_client">
-        <div class="client_card">
-            <img src="/" alt="/">
-            <h4 class="client_name">CLIENT NAME</h4>
+        <div class="conwrapper">
+            <div class="cardbox">
+                <div class="card_c">
+                    <img src="/img/logo_main.png" alt="/">
+                    <h4 class="client_name">CLIENT NAME</h4>
+                </div>
+                <div class="card_c">
+                    <img src="/img/logo_main.png" alt="/">
+                    <h4 class="client_name">CLIENT NAME</h4>
+                </div>
+                <div class="card_c">
+                    <img src="/img/logo_main.png" alt="/">
+                    <h4 class="client_name">CLIENT NAME</h4>
+                </div>
+                <div class="card_c">
+                    <img src="/img/logo_main.png" alt="/">
+                    <h4 class="client_name">CLIENT NAME</h4>
+                </div>
+                <div class="card_c">
+                    <img src="/img/logo_main.png" alt="/">
+                    <h4 class="client_name">CLIENT NAME</h4>
+                </div>
+                <div class="card_c">
+                    <img src="/img/logo_main.png" alt="/">
+                    <h4 class="client_name">CLIENT NAME</h4>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="grid_client">
-        <div class="client_card">
-            <img src="/" alt="/">
-            <h4 class="client_name">CLIENT NAME</h4>
-        </div>
-    </div>
-
-    <div class="grid_client">
-        <div class="client_card">
-            <img src="/" alt="/">
-            <h4 class="client_name">CLIENT NAME</h4>
-        </div>
-    </div>
-
-    <div class="grid_client">
-        <div class="client_card">
-            <img src="/" alt="/">
-            <h4 class="client_name">CLIENT NAME</h4>
-        </div>
-    </div>
-
-    <div class="grid_client">
-        <div class="client_card">
-            <img src="/" alt="/">
-            <h4 class="client_name">CLIENT NAME</h4>
-        </div>
-    </div>
-
-    <div class="grid_client">
-        <div class="client_card">
-            <img src="/" alt="/">
-            <h4 class="client_name">CLIENT NAME</h4>
-        </div>
-    </div>
+    </section>
     <!-- clients end -->
 
     <div class="dashline"></div>
 
     <!-- contact start -->
-    <h2>GET A QUOTE</h2>
-    <p>Lets introduce.</p>
-    <form>
-        <input type="text">
-        <input type="email">
-        <input type="text">
-        <button class="card_start">SEND ></button>
-    </form>
-    <!-- contact end -->
-
-    <div class="dashline"></div>
-
-    <!-- cr start -->
-    <footer>
-        <p>Copyright © 2020 YellowBrickCAD
-        </p>
-        <p>Created with BS5 and FB  by Priscilla Heeger
-        </p>
-        <div class="social_index">
-            <img src="/" alt="YouTube icon">
-            <img src="/" alt="Behance icon">
-            <img src="/" alt="Pinterest icon">
-            <img src="/" alt="GitHub icon">
+    <section>
+        <h2>GET A QUOTE</h2>
+        <p>Lets introduce.</p>
+        <div class="form_con">
+            <form class="cardbox">
+                <input type="text" placeholder="Name" name="name">
+                <input type="email" placeholder="E-mail" name="email">
+                <input type="text" placeholder="Message..." name="message">
+                <button class="btn_send">SEND ></button>
+            </form>
         </div>
-    </footer>
+    </section>
+        <!-- contact end -->
+
+        <div class="dashline"></div>
+
+        <!-- cr start -->
+        <footer>
+            <p>Copyright © 2020 YellowBrickCAD
+            </p>
+            <p>Created with BS5 and FB  by Priscilla Heeger
+            </p>
+            <div class="social_index">
+                <img src="/" alt="YouTube icon">
+                <img src="/" alt="Behance icon">
+                <img src="/" alt="Pinterest icon">
+                <img src="/" alt="GitHub icon">
+            </div>
+        </footer>
     <!-- cr end -->
 
     <div class="dashline"></div>
 </body>
+
+<script src="carousel.js"></script>
 
 </html>
