@@ -1,30 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 /* Basic */
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-    font: inherit;
-}
+
 
 body, input, select, textarea {
     font-family: 'Roboto', sans-serif;
     background-color: #222726;;
-    font-size: 15pt;
+    font-size: 1em;
     font-weight: 400;
-    letter-spacing: 0.075em;
     line-height: 1.65em;
 }
 
@@ -38,19 +21,18 @@ ul a {
   
 /* General */
 .dashline {
-    flex-basis: 100%;
-    border: 1px dashed #FFFFFF;
-    box-sizing: border-box;
-    min-width: 320px;
-    max-width: 600px;
-    height: 0px;
+    background-color: #222726;
+    border-top: 2px dashed #8c8b8c;
+    margin: 25px;
+    
+
 }
 
 h2 {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 28px;
     color: #F2F2F2;
     text-align: left;
@@ -60,39 +42,36 @@ h3 {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 20px;
     color: #F2F2F2;
+    padding-left: 25px;
 }
 
 p {
     font-family: Roboto;
     font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #F2F2F2;
-}
-
-section p{
+    font-size: 1em;
+    line-height: 1.1em;
     color: #F2F2F2;
 }
 
 /* Nav */
 nav {
-    font-family: Roboto;
+    font-family: Roboto condensed;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 1em;
+    line-height: 1.1em;
 }
 
 /* Banner */
 
 #banner {
     position: relative;
-    height: 100%;
+    height: 110vh;
     overflow: hidden;
-    background: url(img/bg_banner.jpg) no-repeat center;
+    background: url(img/bg.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
     justify-content: center;
@@ -100,9 +79,9 @@ nav {
 
 .banner_logo {
     text-align: center;
-    min-width: 88px;
+    min-width: 80px;
     max-width: 180px;
-    min-height: 88px;
+    min-height: 80px;
     max-height: 180px;
 }
 
@@ -112,6 +91,14 @@ nav {
     max-width: 480px;
     min-height: 140px;
     max-height: 280px;
+}
+
+.banner-con{
+    margin-top: 10%;
+}
+
+.banner-txt-con{
+    padding: 25px;
 }
 
 .banner1{
@@ -135,6 +122,7 @@ nav {
 }
 
     /* intro */
+
 .introvid{
     left: 0%;
     right: 0%;
@@ -144,6 +132,11 @@ nav {
     background: #FF565E;
     box-shadow: 0px 1px 14px #19282F;
     border-radius: 25px;
+    margin: 25px;
+    max-width: 780px;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
 }
 
 .vid_container{
@@ -161,10 +154,49 @@ nav {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border-radius: 25px;
+    border-radius: 50px;
+    padding: 12px;
     }
 
+    /* portfolio */
+
+#portfolio h2, p {
+    margin-left: 25px !important;
+}
+
+.card-type1{
+    background-color: #4A4A49;
+    margin: 12px;
+    padding: 0px;
+    text-align: center;
+
+    border-radius: 25px;
+}
+
+.card-type1 img {
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.card-type1-name{
+    font-weight: 500;
+    font-size: 1em;
+    color: #F2F2F2;
+    position: absolute;
+    bottom: 0px;
+    right:12px;
+    padding: 12px;
+    text-align: center;
+}
+    /* portfolio end */
+
     /* courses */
+
+    #courses h2, p {
+        margin-left: 25px !important;
+    }
 
 .conwrapper{
     height: 100%;
@@ -180,57 +212,64 @@ nav {
     justify-content: center;
 }
 
-.card_tut{
+.card-type2{
     background-color: #4A4A49;
     margin: 25px;
-    padding: 25px;
+    padding: 0px;
     text-align: center;
-    height: 420px;
-    width: 300px;
+    min-height: 420px;
+    min-width: 300px;
     border-radius: 25px;
 }
 
-.card_tut iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 25px;
-}
-
-.card_tut h3{
+.card-type2-title{
     font-family: Roboto condensed;
     font-weight: bold;
-    margin-top: 12px;
+    margin-bottom: 0;
 }
 
-.card_tut span {
+.card-type2-date {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 0.8em;
+    line-height: 1em;
     color: #96A7AF;
+    margin-top: 0;
 }
 
-.card_tut p {
+.card-type2-about {
     font-size: 14px;
     line-height: 18px;
 }
 
-.btn_more{
+.card {
+    max-width: 100%;
+    overflow: hidden;
+}
+.card-text {
+    word-wrap: break-word;
+}
+
+.btn-100{
+    background: linear-gradient(180deg, #F7E660 0%, #F8C237 100%);
+    bottom: 0;
+    /*text*/
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    color: #222726;
+}
+
+.btn-101-outline{
     /*shape*/
-    padding: 12px;
     text-align: center;
-    min-width: 30%;
-    height: 50px;
+    max-width: 50%;
     border: 4px solid #F7E35D;
     box-sizing: border-box;
     border-radius: 12px;
     background-color: #222726;
-
     /*text*/
     font-family: Roboto;
     font-style: normal;
@@ -240,183 +279,127 @@ nav {
     color: #F7E45D;
 }
 
+    /*services*/
 .conwrapper_s{
     background: #4A4A49;
     border-radius: 40px 0px 40px 0px;
     padding: 25px;
     width: 100%;
     height: 100%;
-
 }
 
-.card_s_white{
-    margin: 12px;
-    padding: 25px;
+.conwrapper_s h2, p {
+    margin-left: 25px !important;
+}
 
-    min-width: 300px;
+.card-type3 {
+    margin: 12px;
     width: 300px;
     height: 100px;
     border-radius: 25px;
-
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
     display: inline-block;
     position: relative;
-
-    background-color: #F2F2F2;
+    padding-top: 8px;
+    min-width: 300px;
 }
 
-.card_s_white img{
+.card-type3 img {
     height: 80px;
+    width: 80px;
+    float:left;
+    margin-left: 25px;
+    margin-right: 0;
+}
+.card-type3-text {
     float:left;
     margin-left: auto;
-    margin-top: 10px;
-}
-
-.s_txt_con {
-    float:left;
-    align-content: center;
     text-align: left;
-    margin-left: 25px;
-    margin-right: auto;
-    margin-top: 35px;
+    padding-top: 20px;
 }
 
-.s_txt_con h3{
+.card-type3-title {
     color: #1A3B34;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 21px;
+    margin-bottom: 0;
+    line-height: 25px;
 }
 
-.s_click {
+.card-type3-cta {
     color: #1A3B34;
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    margin-top: 0;
+    margin-left: 12px;
 }
 
-/* folio */
-
-.cardwrapper_pf{
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 25px;
+.card-type3-white {
+    background-color: #F2F2F2;
 }
 
-.card_pf{
-    cursor: pointer;
-    border-radius: 25px;
-    margin: 12px;
-    padding: 12px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: block;
-    height: 300px;
-    min-width: 300px;
-
-    overflow: hidden;
-    background: url(img/bg_banner.jpg) no-repeat center;
-    background-size: cover;
+.card-type3-red {
+    background-color: #FF565E;
 }
 
-.card_pf h3{
-    margin-top: 275px;
+.card-type3-green {
+    background-color: #09C372;
+}
+
+.card-type3-bluelight {
+    background-color: #54C5F8;
+}
+
+.card-type3-bluedark {
+    background-color: #2496ED;
+}
+
+.card-type3-yellow {
+    background-color: #F7E35D;
 }
 
 /* clients */
 
-.card_c{
-    margin: 12px;
-    padding: 25px;
-
-    width: 150px;
-    height: 75px;
-    border-radius: 25px;
-
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    display: inline-block;
-    position: relative;
-
-    background-color: #F2F2F2;
+#clients{
+    padding:25px;
 }
 
-.card_c img{
-    height: 50px;
-    float:left;
-    margin-left: auto;
-    margin-right: 25px;
-    margin-top: 10px;
-}
-
-.client_name{
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 15px;
-    color: #222726;
-
-    align-content: center;
-    text-align: left;
+#clients h2{
     margin-left: 25px;
-    margin-right: auto;
-    margin-top: 25px;
 }
+
 
 /* contact */
 
-.form_con{
+#quote{
+    padding:25px;
+    color: #f2f2f2;
+}
+
+#quote h2{
+    margin-left: 25px;
+}
+
+.form-con{
+    max-width: 980px;
+    background-color: #2C302F;
     padding: 25px;
+    border-radius: 25px;
 }
 
-.form_con{
-    padding: 25px;
-    display: inline-block;
-}
+/* copyright */
 
-.form_con input {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: #96A7AF;
-    display: block;
-}
-
-.btn_send{
-    /*shape*/
-    padding: 12px;
+.copyright{
     text-align: center;
-    min-width: 30%;
-    height: 50px;
-    background: #FFC542;
-    border-radius: 12px;
-
-    /*text*/
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
-
-    display: inline-block;
+    margin: auto;
+    padding: auto;
+    align-self: center;
 }
 
-/* X */
+.fab {
+    color:#f2f2f2;
+    margin: 6px;
+}

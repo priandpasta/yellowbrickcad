@@ -6,39 +6,75 @@
     <meta name="author" content="Priscilla Heeger">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
+
     <title>Yellow Brick CAD</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- unique styles -->
+        <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="courses.html">COURSES</a></li>
-                <li><a href="downloads.html">DOWNLOADS</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="img/logo-main-2.png" alt="brand logo" width="80" height="80" class="d-inline-block align-top" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="courses.html">COURSES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="downloads.html">DOWNLOADS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+              </ul>
+              <div class="d-none d-lg-block">
+                  <form class="form-inline my-2 my-md-0">
+                        <input class="form-control form-control-sm" type="text" placeholder="Search">
+                  </form>
+              </div>
+            </div>
+        </div>
+          </nav>
     </header>
-
     <!-- banner -->
     <section id="banner">
-        <img class="banner_logo" src="/img/logo_main.png" alt="Main Logo">
-        <img class="banner_typo" src="/img/logo_typo_white.png" alt="Brand Name">
-        <span class="banner1">DESIGN PLATAFORM FOR</span>
-        <h1 class="banner2">DRAFTING AND ARCHITECTURAL VISUALIZATIONS</h1>
+    <div class="banner-con">
+        <img class="banner_logo" src="/img/logo-main-2.png" alt="Main Logo">
+        <img class="banner_typo" src="/img/typo-wth.png" alt="Brand Name">
+        <div class="banner-txt-con">
+            <h1 class="banner1">DESIGN PLATAFORM FOR</h1>
+            <h1 class="banner2">DRAFTING AND ARCHITECTURAL VISUALIZATIONS</h1>
+        </div>
+    </div>
     </section>
     <!-- banner end -->
 
-    <div class="dashline"></div>
+    <hr class="dashline">
 
     <!-- intro vid start -->
     <section id="intro">
+        <div class="container">
         <div class="introvid">
             <h2>INTRO</h2>
             <p>YellowBrick is an ecosystem of practical resources for who wants to build high-quality.</p>
@@ -46,177 +82,290 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9u2o3PToUww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+         </div>
     </section>
     <!-- intro vid end -->
 
-    <div class="dashline"></div>
+    <hr class="dashline">
 
     <!-- folio start -->
     <section id="portfolio">
         <h2>PORTFOLIO</h2>
         <p>Our latest projects.</p>
-        <div class="cardwrapper_pf">
-
-            <div class="card_pf">
-                <h3>Project 1</h3>
+        <div class="container-fluid center">
+            <div class="row">
+                <div class="card-type1 col-sm-4 center float-left">
+                    <a href="portfolio.html/project1">
+                        <img class="img-fluid" src="img/bg.jpg">
+                            <div class="card-type1-name">
+                                <h6>Project 1</h6>
+                            </div>
+                    </a>
+                </div>
+                <div class="card-type1 col-sm-4 center float-left">
+                    <a href="portfolio.html/project1">
+                        <img class="img-fluid" src="img/bg.jpg">
+                            <div class="card-type1-name">
+                                <h6>Project 2</h6>
+                            </div>
+                    </a>
+                </div>
+                <div class="card-type1 col-sm-4 center float-left">
+                    <a href="portfolio.html/project1">
+                        <img class="img-fluid" src="img/bg.jpg">
+                            <div class="card-type1-name">
+                                <h6>Project 3</h6>
+                            </div>
+                    </a>
+                </div>
             </div>
-            <div class="card_pf">
-                <h3>Project 2</h3>
-            </div>
-            <div class="card_pf">
-                <h3>Project 3</h3>
-            </div>
-
         </div>   
     </section>
-    <!-- folio vid end -->
+    <!-- folio end -->
 
-    <div class="dashline"></div>
+    <hr class="dashline">
 
     <!-- courses start -->
     <section id="courses">
         <h2>COURSES</h2>
         <p>Our latest tutorials.</p>
-        <div class="conwrapper">
-            <div class="cardbox">
-                <div class="card_tut"> <!-- card1 -->
-                    <div class="vid_container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgNrIRcz9K4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-deck">
+                    <!-- card1 -->
+                    <div class="card card-type2">
+                        <!-- use youtube img thumbnail --> 
+                        <img class="card-img-top img-fluid" src="img/bg.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text card-type2-title">Lumion | How to Create a Panorama and share it as street view</p>
+                          <p class="card-text card-type2-date">23 Jul 2020</p>
+                          <p class="card-text card-type2-about">How to make a panorama picture in Lumion 8 is simple. I will teach you how to configure the settings and how to share so your clients can view the same as google street view</p>
+                          <a class="btn btn-100 btn-block" href="#" role="button">WATCH</a>
+                        </div>
                     </div>
-                    <h3>Lumion | How to Create a Panorama and share it as street view</h3>
-                    <span>23 Jul 2020</span>    <!-- date/time stamp -->
-                    <p>How to make a panorama picture in Lumion 8 is simple. I will teach you how to configure the settings and how to share so your clients can view the same as google street view </p>
+                    <!-- card2 -->
+                    <div class="card card-type2">
+                        <!-- use youtube img thumbnail --> 
+                        <img class="card-img-top img-fluid" src="img/bg.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text card-type2-title">Revit | Delete Almost Everything</p>
+                          <p class="card-text card-type2-date">20 Jun 2020</p>
+                          <p class="card-text card-type2-about">How to delete almost all element types in Revit using Dynamo.</p>
+                          <a class="btn btn-100 btn-block" href="#" role="button">WATCH</a>
+                        </div>
+                  </div>
+                    <!-- card3 -->
+                    <div class="card card-type2">
+                        <!-- use youtube img thumbnail --> 
+                        <img class="card-img-top img-fluid" src="img/bg.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text card-type2-title">Revit | How to create multiple sheets from an excel list</p>
+                          <p class="card-text card-type2-date">12 Jun 2020</p>
+                          <p class="card-text card-type2-about">Save your time by learning how to create multiple sheets from an excel list with Revit + Dynamo. Don't be scared of using Dynamo, its easier than you think it is :)</p>
+                          <a class="btn btn-100 btn-block" href="#" role="button">WATCH ></a>
+                        </div>
+                  </div>
                 </div>
-
-                <div class="card_tut"> <!-- card2 -->
-                    <div class="vid_container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdECDMP-P-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <h3>Revit | Delete Almost Everything</h3>
-                    <span>20 Jun 2020</span>    <!-- date/time stamp -->
-                    <p>How to delete almost all element types in Revit using Dynamo.</p>
+                <div class="cardbox">
+                    <a class="btn btn-block btn-101-outline" href="#" role="button">MORE +</a>
                 </div>
-
-                <div class="card_tut"> <!-- card3 -->
-                    <div class="vid_container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bbAeDUzGU-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <h3>Revit | How to create multiple sheets from an excel list</h3>
-                    <span>12 Jun 2020</span>    <!-- date/time stamp -->
-                    <p>Save your time by learning how to create multiple sheets from an excel list with Revit + Dynamo. Don't be scared of using Dynamo, its easier than you think it is :)</p>
-                </div>
-            </div>
-            <div class="cardbox">
-                <button class="btn_more">MORE ></button>
-            </div>
-        </div>
     </section>
     <!-- courses end -->    
 
-    <div class="dashline"></div>
+    <hr class="dashline">
 
     <!-- services start -->
     <section id="services">
-            <div class="conwrapper_s">
+        <div class="conwrapper_s">
             <h2>SERVICES</h2>
             <p>Our main skills.</p>
-            <div class="cardbox">
-
-                <div class="card_s_white"> <!-- card1 -->
-                    <img src="/img/logo_main.png" >
-                    <div class="s_txt_con">
-                        <h3>SKILLS</h3>
-                        <p class="s_click">Click for more ></p>
+            <div class="card-deck">
+                    <!-- card1 -->
+                    <div class="card card-type3 card-type3-white">
+                    <!-- use service icon --> 
+                        <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                        <div class="card-type3-text">
+                            <p class="card-type3-title">SKILL NAME</p>
+                            <a class="btn card-type3-cta" href="#" role="button">Click for more ></a>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card_s_white"> <!-- card2 -->
-                    <img src="/img/logo_main.png" >
-                    <div class="s_txt_con">
-                        <h3>SKILLS</h3>
-                        <p class="s_click">Click for more ></p>
-                    </div>
-                </div>
-
+                    <!-- card 2 -->
+                    <div class="card card-type3 card-type3-yellow">
+                        <!-- use service icon --> 
+                            <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                            <div class="card-type3-text">
+                                <p class="card-type3-title">SKILL NAME</p>
+                                <a class="btn card-type3-cta" href="#" role="button">Click for more ></a>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card card-type3 card-type3-red">
+                            <!-- use service icon --> 
+                                <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                                <div class="card-type3-text">
+                                    <p class="card-type3-title">SKILL NAME</p>
+                                    <a class="btn card-type3-cta" href="#" role="button">Click for more ></a>
+                                </div>
+                            </div>
+                        <!-- card 4 -->
+                        <div class="card card-type3 card-type3-green">
+                            <!-- use service icon --> 
+                                <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                                <div class="card-type3-text">
+                                    <p class="card-type3-title">SKILL NAME</p>
+                                    <a class="btn card-type3-cta" href="#" role="button">Click for more ></a>
+                                </div>
+                            </div>
+                        <!-- card 5 -->
+                        <div class="card card-type3 card-type3-bluelight">
+                            <!-- use service icon --> 
+                                <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                                <div class="card-type3-text">
+                                    <p class="card-type3-title">SKILL NAME</p>
+                                    <a class="btn card-type3-cta" href="#" role="button">Click for more ></a>
+                                </div>
+                            </div>
+                        <!-- card 5 -->
+                        <div class="card card-type3 card-type3-bluedark">
+                            <!-- use service icon --> 
+                                <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                                <div class="card-type3-text">
+                                    <p class="card-type3-title">SKILL NAME</p>
+                                    <a class="btn card-type3-cta" href="#" role="button">Click for more ></a>
+                                </div>
+                            </div>
             </div>
     </section>
     <!-- services end -->
 
-    <div class="dashline"></div>
+    <hr class="dashline">
 
     <!-- clients start -->
-        <section>
+        <section id="clients">
         <h2>TRUSTED BY</h2>
         <p>Some of out clients.</p>
-
-        <div class="conwrapper">
-            <div class="cardbox">
-                <div class="card_c">
-                    <img src="/img/logo_main.png" alt="/">
-                    <h4 class="client_name">CLIENT NAME</h4>
-                </div>
-                <div class="card_c">
-                    <img src="/img/logo_main.png" alt="/">
-                    <h4 class="client_name">CLIENT NAME</h4>
-                </div>
-                <div class="card_c">
-                    <img src="/img/logo_main.png" alt="/">
-                    <h4 class="client_name">CLIENT NAME</h4>
-                </div>
-                <div class="card_c">
-                    <img src="/img/logo_main.png" alt="/">
-                    <h4 class="client_name">CLIENT NAME</h4>
-                </div>
-                <div class="card_c">
-                    <img src="/img/logo_main.png" alt="/">
-                    <h4 class="client_name">CLIENT NAME</h4>
-                </div>
-                <div class="card_c">
-                    <img src="/img/logo_main.png" alt="/">
-                    <h4 class="client_name">CLIENT NAME</h4>
+        <div class="card-deck">
+            <!-- card1 -->
+            <div class="card card-type3 card-type3-white">
+            <!-- use service icon --> 
+                <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                <div class="card-type3-text">
+                    <p class="card-type3-title">SKILL NAME</p>
                 </div>
             </div>
-        </div>
+            <!-- card 2 -->
+            <div class="card card-type3 card-type3-white">
+                <!-- use service icon --> 
+                    <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                    <div class="card-type3-text">
+                        <p class="card-type3-title">SKILL NAME</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card card-type3 card-type3-white">
+                    <!-- use service icon --> 
+                        <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                        <div class="card-type3-text">
+                            <p class="card-type3-title">SKILL NAME</p>
+                        </div>
+                    </div>
+                <!-- card 4 -->
+                <div class="card card-type3 card-type3-white">
+                    <!-- use service icon --> 
+                        <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                        <div class="card-type3-text">
+                            <p class="card-type3-title">SKILL NAME</p>
+                        </div>
+                    </div>
+                <!-- card 5 -->
+                <div class="card card-type3 card-type3-white">
+                    <!-- use service icon --> 
+                        <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                        <div class="card-type3-text">
+                            <p class="card-type3-title">SKILL NAME</p>
+                        </div>
+                    </div>
+                <!-- card 6 -->
+                <div class="card card-type3 card-type3-white">
+                    <!-- use service icon --> 
+                        <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                        <div class="card-type3-text">
+                            <p class="card-type3-title">SKILL NAME</p>
+                        </div>
+                    </div>
+                <!-- card 7 -->
+                <div class="card card-type3 card-type3-white">
+                    <!-- use service icon --> 
+                        <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                        <div class="card-type3-text">
+                            <p class="card-type3-title">SKILL NAME</p>
+                        </div>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="card card-type3 card-type3-white">
+                        <!-- use service icon --> 
+                            <img class="float-left" src="img/logo-main-2.png" alt="Skill icon 1">
+                            <div class="card-type3-text">
+                                <p class="card-type3-title">SKILL NAME</p>
+                            </div>
+                        </div>
+    </div>
     </section>
     <!-- clients end -->
 
-    <div class="dashline"></div>
+    <hr class="dashline">
 
     <!-- contact start -->
-    <section>
+    <section id="quote">
         <h2>GET A QUOTE</h2>
         <p>Lets introduce.</p>
-        <div class="form_con">
-            <form class="cardbox">
-                <input type="text" placeholder="Name" name="name">
-                <input type="email" placeholder="E-mail" name="email">
-                <input type="text" placeholder="Message..." name="message">
-                <button class="btn_send">SEND ></button>
+        <div class="container-fluid form-con">
+            <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-block btn-100">SEND ></button>
             </form>
         </div>
     </section>
         <!-- contact end -->
 
-        <div class="dashline"></div>
+        <hr class="dashline">
 
-        <!-- cr start -->
-        <footer>
+        <!-- copyright start -->
+    <footer class="mastfoot mt-auto">
+        <div class="container-fluid center copyright">
             <p>Copyright © 2020 YellowBrickCAD
             </p>
-            <p>Created with BS5 and FB  by Priscilla Heeger
+            <p>Created by Priscilla Heeger
             </p>
-            <div class="social_index">
-                <img src="/" alt="YouTube icon">
-                <img src="/" alt="Behance icon">
-                <img src="/" alt="Pinterest icon">
-                <img src="/" alt="GitHub icon">
+            <div class="container center">
+                <a href="/">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="/">
+                <i class="fab fa-behance"></i>
+                </a>
+                <a href="/">
+                <i class="fab fa-pinterest"></i>
+                </a>
+                <a href="/">
+                <i class="fab fa-github"></i>
+                </a>
             </div>
-        </footer>
+        </div>
+    </footer>
     <!-- cr end -->
 
-    <div class="dashline"></div>
+    <hr class="dashline">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/40a2bf4e2a.js" crossorigin="anonymous"></script>
 </body>
-
-<script src="carousel.js"></script>
-
 </html>
